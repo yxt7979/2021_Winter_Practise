@@ -1,6 +1,6 @@
 ## LeetCode周赛222
 
-### A.**卡车上的最大单元数**
+### A.**卡车上的最大单元数** 
 
 排序&贪心
 
@@ -39,4 +39,11 @@ if(hash.count(t)){
    2. r的范围：需要让0到k的和 <=  k到i的和的最大边界。
 
 ### D. [得到子序列的最少操作次数](https://leetcode-cn.com/problems/minimum-operations-to-make-a-subsequence/)
+
+题意：给一个Target数组和Arr数组，问在Arr中添加多少数才能使Target是Arr的子序列。
+
+思路：其实最后子数组能用上的就是哪些位置逐渐增加的数字，因此求出Target和Arr共同数的位置的最大上升子序列的长度，用Target.len - 长度即可！
+
+- [这里最长上升子序列的做法](https://leetcode-cn.com/problems/longest-increasing-subsequence/solution/yi-bu-yi-bu-tui-dao-chu-guan-fang-zui-you-jie-fa-x/)
+- 又用到了unordered_map
 
