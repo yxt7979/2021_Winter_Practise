@@ -40,7 +40,7 @@ if(hash.count(t)){
 
 ### D. [得到子序列的最少操作次数](https://leetcode-cn.com/problems/minimum-operations-to-make-a-subsequence/)
 
-题意：给一个Target数组和Arr数组，问在Arr中添加多少数才能使Target是Arr的子序列。
+题意：给一个Target数组和一个Arr数组，问在Arr中添加多少数才能使Target是Arr的子序列。
 
 思路：其实最后子数组能用上的就是哪些位置逐渐增加的数字，因此求出Target和Arr共同数的位置的最大上升子序列的长度，用Target.len - 长度即可！
 

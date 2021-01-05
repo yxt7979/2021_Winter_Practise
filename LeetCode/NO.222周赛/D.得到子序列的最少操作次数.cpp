@@ -11,6 +11,7 @@ public:
         }
         return minnums.size();
     }
+    
     int minOperations(vector<int>& target, vector<int>& arr) {
         unordered_map<int,int> M;
         for(int i = 0;i < target.size();i++){
