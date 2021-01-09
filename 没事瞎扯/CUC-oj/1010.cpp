@@ -1,4 +1,4 @@
-//
+// 这个再错真不知道咋改惹...QAQ
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -52,7 +52,8 @@ class num{
 				c.a[i+1] += c.a[i] / base;
 				c.a[i] %= base; 
 			}
-			if(c.a[a[0] + 1] != 0) c.a[0] ++ ;
+			//这个地方的c. ..... 
+			if(c.a[c.a[0] + 1] != 0) c.a[0] ++ ;
 			return c;
 		}
 		
@@ -88,8 +89,8 @@ int main()
 				check[q][end] = max(check[q+1][end] + check[q+1][end] + a[q],check[q][end-1] + check[q][end-1] + a[end]);
 			}
 		}
-		ans = check[0][m-1] + ans;
-		ans = check[0][m-1] + ans;
+		ans = ans + check[0][m-1];
+		ans = ans + check[0][m-1];
 	}
 	ans.print();
 	return 0;
