@@ -22,5 +22,24 @@ reverse(now.begin(),now.end());
 
 
 
+## 2021.01.14 剪绳子
+
+double的二分：(保留2位时)
+
+```c++
+bool check(double a){...}
+
+double l = 0;
+double r = 1e9;
+while(r - l > 0.001){
+    double mid = l + (r - l) / 2;
+    if(check(mid) == true) l = mid;
+    else r = mid;
+}
+printf("%.2lf",l);
+```
+
+
+
 
 
