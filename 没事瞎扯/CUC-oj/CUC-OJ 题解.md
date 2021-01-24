@@ -78,3 +78,13 @@ for(int i = 1;i <= m;i++){
 ```
 
 ![image-20210123214546210](https://littlefisher.oss-cn-beijing.aliyuncs.com/images/image-20210123214546210.png)
+
+## 核桃的数量
+
+**题意**：求最小的数，让%三个数可以 == 0
+
+**题解**：lcm(a,lcm(b,c))
+
+## 带分数
+
+**题解**：全排列找到1-9的不同顺序，同时每个顺序枚举可能的a,b,c，判断是否可以。
