@@ -15,10 +15,8 @@ int main()
 			else printf("%lld\n",b/a);
 		}
 		else{
-			int tmp = b;
-			while(a > b){
-				b += tmp;
-			}
+			if(a % b == 0) b = a;
+			else b = (a / b) * b + b;
 			if(b % a != 0) printf("%lld\n",b/a + 1);
 			else printf("%lld\n",b/a);
 		}
