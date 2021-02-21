@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 #define f(i,a,b) for(int i=(a);i<=(b);i++)
+#define int long long 
 using namespace std;
 typedef long long ll;
 const int mod=1e9+7;
