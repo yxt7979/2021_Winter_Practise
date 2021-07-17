@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-const int MaxSize = 200000;
-int f[MaxSize];
+const int MaxSize = 100010;
+int f[MaxSize * 2];
 int n,k;
 
 int find(int x){
@@ -10,13 +10,14 @@ int find(int x){
 void merge(int a,int b){
 	f[find(a)] = find(b);
 }
+void init(int n){
+	for(int i = 1;i <= n * 3;i++) f[i] = i;
+}
 
 int main()
 {
 	cin>>n>>k;
-	for(int i = 1;i <= 3*n;i++){
-		f[i] = i;
-	}
+	init(n);
 	int cnt = 0;
 	for(int i = 0;i < k;i++){
 		int d,a,b;
